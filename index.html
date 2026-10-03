@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +8,36 @@
   <link rel="stylesheet" href="styles.css">
   <script src="modernizr.custom.05819.js"></script>
 </head>
+
 <body>
 
-  <header>
+  <!-- Main Navigation -->
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+
+      <li class="dropdown">
+        <a href="#projects">Projects</a>
+        <ul class="dropdown-menu">
+          <li><a href="#web-projects">Web Projects</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
     <img src="logo.jpg" alt="Kelvin Dominguez logo" class="logo">
     <h1>Kelvin Dominguez</h1>
     <p class="tagline">Risk Analyst</p>
   </header>
 
   <main>
+
     <section class="card">
       <h2>Welcome</h2>
       <p>
@@ -25,8 +47,11 @@
       </p>
     </section>
 
-    <section class="card bio">
-      <img src="photo.jpg" alt="View of the Brooklyn Bridge and East River from a balcony" class="photo">
+    <section id="about" class="card bio">
+      <img src="photo.jpg"
+           alt="View of the Brooklyn Bridge and East River from a balcony"
+           class="photo">
+
       <div>
         <h2>About Me</h2>
         <p>
@@ -37,6 +62,45 @@
         </p>
       </div>
     </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <p>
+        This section will contain projects I complete during my
+        client-side programming course.
+      </p>
+    </section>
+
+    <section id="web-projects" class="card">
+      <h2>Web Projects</h2>
+      <p>
+        Web development projects created using HTML and CSS.
+      </p>
+    </section>
+
+    <section id="javascript" class="card">
+      <h2>JavaScript</h2>
+      <p>
+        JavaScript projects and interactive features will be added here
+        as I progress through the course.
+      </p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <p>
+        HTML, CSS, JavaScript, Python, cybersecurity, and information
+        security risk management.
+      </p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>
+        You can find me through the links below.
+      </p>
+    </section>
+
   </main>
 
   <footer>
@@ -46,8 +110,10 @@
       <a href="https://www.w3schools.com/">W3Schools</a>
       <a href="mailto:you@example.com">Email Me</a>
     </nav>
+
     <p>&copy; 2026 Kelvin Dominguez. All Rights Reserved.</p>
   </footer>
 
 </body>
 </html>
+```
