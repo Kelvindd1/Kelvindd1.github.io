@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPG Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <header>
+      <img src="logo.svg" alt="Gas pump logo" class="logo">
+      <h1>Miles Per Gallon Calculator</h1>
+    </header>
+
+    <form id="mpgForm">
+      <label for="milesTraveled">Miles traveled</label>
+      <input type="number" id="milesTraveled" min="0" step="any" placeholder="e.g. 320" required>
+
+      <label for="gallonsUsed">Gallons used</label>
+      <input type="number" id="gallonsUsed" min="0" step="any" placeholder="e.g. 12.5" required>
+
+      <div class="buttons">
+        <button type="submit">Calculate</button>
+        <button type="reset" id="resetBtn">Clear</button>
+      </div>
+    </form>
+
+    <p id="result" class="result"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
