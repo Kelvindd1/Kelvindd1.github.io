@@ -3,31 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MPG Calculator</title>
+  <title>Kelvin Dominguez | MPG Calculator</title>
+  <!-- Site stylesheet first so the nav, header and footer match the homepage -->
+  <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="style.css">
+  <script src="../modernizr.custom.05819.js"></script>
 </head>
+
 <body>
-  <main class="calculator">
-    <header>
-      <img src="logo.svg" alt="Gas pump logo" class="logo">
-      <h1>Miles Per Gallon Calculator</h1>
-    </header>
 
-    <form id="mpgForm">
-      <label for="milesTraveled">Miles traveled</label>
-      <input type="number" id="milesTraveled" min="0" step="any" placeholder="e.g. 320" required>
+  <!-- Main Navigation (same menu as the homepage, pointing back up one folder) -->
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#about">About Me</a></li>
 
-      <label for="gallonsUsed">Gallons used</label>
-      <input type="number" id="gallonsUsed" min="0" step="any" placeholder="e.g. 12.5" required>
+      <li class="dropdown">
+        <a href="../index.html#projects">Projects</a>
+        <ul class="dropdown-menu">
+          <li><a href="../index.html#web-projects">Web Projects</a></li>
+          <li><a href="../index.html#javascript">JavaScript</a></li>
+          <li><a href="index.html">MPG Calculator</a></li>
+        </ul>
+      </li>
 
-      <div class="buttons">
-        <button type="submit">Calculate</button>
-        <button type="reset" id="resetBtn">Clear</button>
-      </div>
-    </form>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <p id="result" class="result"></p>
+  <header>
+    <img src="logo.svg" alt="Gas pump logo" class="logo">
+    <h1>Miles Per Gallon Calculator</h1>
+    <p class="tagline">JavaScript Project</p>
+  </header>
+
+  <main>
+
+    <p class="breadcrumb">
+      <a href="../index.html">Home</a> &gt;
+      <a href="../index.html#javascript">JavaScript</a> &gt;
+      MPG Calculator
+    </p>
+
+    <section class="card calculator">
+      <h2>Calculate Your MPG</h2>
+
+      <form id="mpgForm">
+        <label for="milesTraveled">Miles traveled</label>
+        <input type="number" id="milesTraveled" min="0" step="any" placeholder="e.g. 320" required>
+
+        <label for="gallonsUsed">Gallons used</label>
+        <input type="number" id="gallonsUsed" min="0" step="any" placeholder="e.g. 12.5" required>
+
+        <div class="buttons">
+          <button type="submit">Calculate</button>
+          <button type="reset" id="resetBtn">Clear</button>
+        </div>
+      </form>
+
+      <p id="result" class="result"></p>
+    </section>
+
+    <p><a href="../index.html#javascript">Back to JavaScript projects</a></p>
+
   </main>
+
+  <footer>
+    <nav>
+      <a href="https://github.com/kelvindd1">GitHub</a>
+      <a href="https://www.linkedin.com/">LinkedIn</a>
+      <a href="https://www.w3schools.com/">W3Schools</a>
+      <a href="mailto:kelvindd1999@gmail.com">Email Me</a>
+    </nav>
+
+    <p>&copy; 2026 Kelvin Dominguez. All Rights Reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
