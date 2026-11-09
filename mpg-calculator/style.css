@@ -1,44 +1,29 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #eef2f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
+/* Calculator-only styles. The nav, header, footer and .card come from ../styles.css,
+   so everything here is scoped to .calculator to avoid overriding the site look. */
+
+.breadcrumb {
+  font-size: 0.9em;
+  color: #6b7280;
+}
+
+.breadcrumb a,
+main > p a {
+  color: #1e3a8a;
+  font-weight: bold;
 }
 
 .calculator {
-  background-color: #ffffff;
-  width: 340px;
-  padding: 24px 28px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  max-width: 420px;
+  margin: 0 auto 20px;
 }
 
-header {
-  text-align: center;
-}
-
-.logo {
-  width: 80px;
-  height: 80px;
-}
-
-h1 {
-  font-size: 1.3rem;
-  color: #1f3b57;
-  margin: 8px 0 20px;
-}
-
-label {
+.calculator label {
   display: block;
   font-weight: bold;
   margin-bottom: 4px;
-  color: #333;
 }
 
-input {
+.calculator input {
   width: 100%;
   box-sizing: border-box;
   padding: 8px;
@@ -48,26 +33,31 @@ input {
   font-size: 1rem;
 }
 
-.buttons {
+.calculator .buttons {
   display: flex;
   gap: 10px;
 }
 
-button {
+.calculator button {
   flex: 1;
   padding: 10px;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
 }
 
-button[type="submit"] {
-  background-color: #2a6f97;
-  color: #fff;
+.calculator button[type="submit"] {
+  background-color: #1e3a8a;
+  color: white;
 }
 
-button[type="reset"] {
+.calculator button[type="submit"]:hover {
+  background-color: #7c3aed;
+}
+
+.calculator button[type="reset"] {
   background-color: #d9dee3;
   color: #333;
 }
