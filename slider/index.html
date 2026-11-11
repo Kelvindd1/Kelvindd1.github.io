@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelvin Dominguez | Image Slider</title>
+  <!-- Site stylesheet first so the nav, header and footer match the homepage -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="../modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+
+  <!-- Main Navigation (same menu as the homepage, pointing back up one folder) -->
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#about">About Me</a></li>
+
+      <li class="dropdown">
+        <a href="../index.html#projects">Projects</a>
+        <ul class="dropdown-menu">
+          <li><a href="../index.html#web-projects">Web Projects</a></li>
+          <li><a href="../index.html#javascript">JavaScript</a></li>
+          <li><a href="../mpg-calculator/index.html">MPG Calculator</a></li>
+          <li><a href="index.html">Image Slider</a></li>
+        </ul>
+      </li>
+
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="../logo.jpg" alt="Kelvin Dominguez logo" class="logo">
+    <h1>Image Slider</h1>
+    <p class="tagline">JavaScript Project</p>
+  </header>
+
+  <main>
+
+    <p class="breadcrumb">
+      <a href="../index.html">Home</a> &gt;
+      <a href="../index.html#javascript">JavaScript</a> &gt;
+      Image Slider
+    </p>
+
+    <section class="card gallery">
+      <h2>Photo Gallery</h2>
+
+      <div class="slideshow">
+
+        <div class="slide fade">
+          <img src="images/building1.jpg" alt="The Chrysler Building spire seen down a Midtown street">
+          <p class="caption">Chrysler Building</p>
+        </div>
+
+        <div class="slide fade">
+          <img src="images/building2.jpg" alt="The Empire State Building framed between office buildings">
+          <p class="caption">Empire State Building</p>
+        </div>
+
+        <div class="slide fade">
+          <img src="images/building3.jpg" alt="A tall Midtown residential tower lit up at dusk">
+          <p class="caption">Midtown at dusk</p>
+        </div>
+
+        <div class="slide fade">
+          <img src="images/building4.jpg" alt="The Oculus at the World Trade Center under a cloudy sky">
+          <p class="caption">The Oculus, World Trade Center</p>
+        </div>
+
+        <span id="counter" class="counter"></span>
+
+        <button type="button" id="prevBtn" class="arrow prev" aria-label="Previous slide">&#10094;</button>
+        <button type="button" id="nextBtn" class="arrow next" aria-label="Next slide">&#10095;</button>
+      </div>
+
+      <!-- Thumbnails double as the slide picker; script.js matches them to slides by position -->
+      <div class="thumbnails">
+        <img class="thumb" src="images/building1.jpg" alt="Show photo 1">
+        <img class="thumb" src="images/building2.jpg" alt="Show photo 2">
+        <img class="thumb" src="images/building3.jpg" alt="Show photo 3">
+        <img class="thumb" src="images/building4.jpg" alt="Show photo 4">
+      </div>
+
+      <div class="controls">
+        <button type="button" id="playBtn">Pause</button>
+      </div>
+    </section>
+
+    <p><a href="../index.html#javascript">Back to JavaScript projects</a></p>
+
+  </main>
+
+  <footer>
+    <nav>
+      <a href="https://github.com/kelvindd1">GitHub</a>
+      <a href="https://www.linkedin.com/">LinkedIn</a>
+      <a href="https://www.w3schools.com/">W3Schools</a>
+      <a href="mailto:kelvindd1999@gmail.com">Email Me</a>
+    </nav>
+
+    <p>&copy; 2026 Kelvin Dominguez. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
