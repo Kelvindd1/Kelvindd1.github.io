@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corner Cup Coffee | Applications</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg" alt="Corner Cup Coffee logo">
+        Corner Cup Coffee
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="apps.html" class="active">Applications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <h1>Applications</h1>
+    <p>JavaScript projects built during the course</p>
+  </section>
+
+  <main>
+
+    <section class="card app" id="slider">
+      <span class="app-tag">App 1</span>
+      <h2>Image Slider</h2>
+      <p>
+        A photo slideshow that shows our menu specials. It moves to the next
+        photo every 4 seconds, and you can use the arrows, click a thumbnail,
+        or pause it.
+      </p>
+
+      <div class="app-demo">
+        <div class="slideshow">
+          <div class="slide fade">
+            <img src="images/latte.jpg" alt="Caramel latte">
+          </div>
+          <div class="slide fade">
+            <img src="images/cold-brew.jpg" alt="Cold brew coffee">
+          </div>
+          <div class="slide fade">
+            <img src="images/croissant.jpg" alt="Butter croissant">
+          </div>
+          <div class="slide fade">
+            <img src="images/muffin.jpg" alt="Blueberry muffin">
+          </div>
+
+          <span id="counter" class="counter"></span>
+
+          <button type="button" id="prevBtn" class="arrow prev" aria-label="Previous slide">&#10094;</button>
+          <button type="button" id="nextBtn" class="arrow next" aria-label="Next slide">&#10095;</button>
+        </div>
+
+        <!-- script.js matches each thumbnail to a slide by position -->
+        <div class="thumbnails">
+          <img class="thumb" src="images/latte.jpg" alt="Show photo 1">
+          <img class="thumb" src="images/cold-brew.jpg" alt="Show photo 2">
+          <img class="thumb" src="images/croissant.jpg" alt="Show photo 3">
+          <img class="thumb" src="images/muffin.jpg" alt="Show photo 4">
+        </div>
+
+        <div class="slider-controls">
+          <button type="button" id="playBtn" class="button">Pause</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card app" id="mpg">
+      <span class="app-tag">App 2</span>
+      <h2>Miles Per Gallon Calculator</h2>
+      <p>
+        Enter the miles driven and the gallons of gas used, and the calculator
+        shows the car's miles per gallon. It also checks for empty values and
+        stops you from dividing by zero.
+      </p>
+
+      <div class="app-demo">
+        <form id="mpgForm">
+          <label for="milesTraveled">Miles traveled</label>
+          <input type="number" id="milesTraveled" min="0" step="any" placeholder="e.g. 320">
+
+          <label for="gallonsUsed">Gallons used</label>
+          <input type="number" id="gallonsUsed" min="0" step="any" placeholder="e.g. 12.5">
+
+          <div class="form-buttons">
+            <button type="submit" class="button">Calculate</button>
+            <button type="reset" id="resetBtn" class="button secondary">Clear</button>
+          </div>
+        </form>
+
+        <p id="result" class="message"></p>
+      </div>
+    </section>
+
+    <section class="card app" id="form-check">
+      <span class="app-tag">App 3</span>
+      <h2>Contact Form Validation</h2>
+      <p>
+        The contact form checks that the name, email and message are filled in
+        and that the email looks valid before showing a thank you message.
+      </p>
+      <a href="contact.html" class="button">Try it on the Contact page</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="apps.html">Applications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p>&copy; 2026 Corner Cup Coffee. Website by Kelvin Dominguez.</p>
+  </footer>
+
+  <script src="js/slider.js"></script>
+  <script src="js/mpg.js"></script>
+</body>
+</html>

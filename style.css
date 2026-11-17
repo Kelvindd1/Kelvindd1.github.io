@@ -1,0 +1,472 @@
+/* Corner Cup Coffee - shared styles for every page
+   Colors: espresso #4b2e1e, caramel #c8873a, cream #f7efe5 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7efe5;
+  color: #3a2a20;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #4b2e1e;
+}
+
+a {
+  color: #a0642a;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Header and navigation */
+
+.site-header {
+  background-color: #4b2e1e;
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f7efe5;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.brand img {
+  width: 42px;
+  height: 42px;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 12px 16px;
+  color: #f7efe5;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+  background-color: #c8873a;
+}
+
+/* Each page adds class="active" to its own link */
+.nav-menu a.active {
+  background-color: #6b4430;
+}
+
+/* Hero banner on the homepage */
+
+.hero {
+  background: url("../images/hero.jpg") center / cover no-repeat;
+  color: #f7efe5;
+  padding: 90px 16px;
+}
+
+.hero-text {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  color: #f7efe5;
+  font-size: 2.6rem;
+  margin: 0 0 10px;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  max-width: 480px;
+}
+
+/* Smaller banner used at the top of the inner pages */
+.page-banner {
+  background-color: #6b4430;
+  color: #f7efe5;
+  text-align: center;
+  padding: 36px 16px;
+}
+
+.page-banner h1 {
+  color: #f7efe5;
+  margin: 0;
+}
+
+.page-banner p {
+  margin: 6px 0 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: #c8873a;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #a0642a;
+}
+
+.button.secondary {
+  background-color: #d9cbbb;
+  color: #3a2a20;
+}
+
+/* Page layout */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 16px 50px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.section-intro {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(75, 46, 30, 0.12);
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.item {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(75, 46, 30, 0.12);
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.item-body {
+  padding: 14px 18px;
+}
+
+.item-body h3 {
+  margin: 0 0 4px;
+}
+
+.item-body p {
+  margin: 0;
+}
+
+.price {
+  color: #a0642a;
+  font-weight: bold;
+}
+
+.two-col {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.two-col img {
+  width: 45%;
+  border-radius: 10px;
+}
+
+/* Menu page table */
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu-table td {
+  padding: 10px 6px;
+  border-bottom: 1px dashed #d9cbbb;
+}
+
+.menu-table td:last-child {
+  text-align: right;
+}
+
+/* Forms (contact form and the MPG calculator) */
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 9px;
+  margin-bottom: 16px;
+  border: 1px solid #c9b8a6;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #c8873a;
+  border-color: #c8873a;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.message {
+  margin-top: 16px;
+  font-weight: bold;
+  min-height: 1.4em;
+}
+
+.error {
+  color: #b00020;
+}
+
+.success {
+  color: #2e7d32;
+}
+
+/* Applications page */
+
+.app {
+  border-top: 5px solid #c8873a;
+}
+
+.app-tag {
+  display: inline-block;
+  background-color: #f7efe5;
+  color: #6b4430;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.app-demo {
+  max-width: 460px;
+  margin: 20px auto 0;
+}
+
+/* Image slider */
+
+.slideshow {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.counter {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 2px 10px;
+  border-radius: 12px;
+  background-color: rgba(75, 46, 30, 0.85);
+  color: white;
+  font-size: 0.85em;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 14px 16px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 6px 0 0 6px;
+}
+
+.arrow:hover,
+.arrow:focus {
+  background-color: #c8873a;
+}
+
+.fade {
+  animation: fadeIn 0.8s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+
+.thumbnails {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.thumb {
+  flex: 1;
+  min-width: 0;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.thumb:hover,
+.thumb.active {
+  opacity: 1;
+}
+
+.thumb.active {
+  border-color: #c8873a;
+}
+
+.slider-controls {
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #4b2e1e;
+  color: #f7efe5;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+footer a {
+  color: #f7efe5;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #e8b77a;
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 10px 0 0;
+  font-size: 0.9em;
+}
+
+@media (max-width: 700px) {
+
+  .header-inner {
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    justify-content: center;
+  }
+
+  .nav-menu a {
+    padding: 8px 10px;
+  }
+
+  /* The cups sit behind the text on narrow screens, so dim the photo */
+  .hero {
+    padding: 60px 16px;
+    background: linear-gradient(rgba(45, 28, 18, 0.8), rgba(45, 28, 18, 0.8)),
+                url("../images/hero.jpg") right / cover no-repeat;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .two-col {
+    flex-direction: column;
+  }
+
+  .two-col img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corner Cup Coffee | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg" alt="Corner Cup Coffee logo">
+        Corner Cup Coffee
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="apps.html">Applications</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <h1>Contact Us</h1>
+    <p>Questions, feedback or catering orders</p>
+  </section>
+
+  <main>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Send Us a Message</h2>
+
+        <form id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="topic">Topic</label>
+          <select id="topic">
+            <option value="question">General question</option>
+            <option value="catering">Catering order</option>
+            <option value="feedback">Feedback</option>
+          </select>
+
+          <label for="msg">Message</label>
+          <textarea id="msg" rows="5"></textarea>
+
+          <button type="submit" class="button">Send</button>
+        </form>
+
+        <p id="formMessage" class="message"></p>
+      </section>
+
+      <section class="card">
+        <h2>Visit or Call</h2>
+        <p>
+          <strong>Address</strong><br>
+          123 Grand Concourse<br>
+          Bronx, NY 10451
+        </p>
+        <p>
+          <strong>Phone</strong><br>
+          (718) 555-0142
+        </p>
+        <p>
+          <strong>Email</strong><br>
+          hello@cornercupcoffee.com
+        </p>
+      </section>
+    </div>
+
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="apps.html">Applications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p>&copy; 2026 Corner Cup Coffee. Website by Kelvin Dominguez.</p>
+  </footer>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>

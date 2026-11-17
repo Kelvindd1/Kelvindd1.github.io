@@ -3,118 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kelvin Dominguez | Homepage</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="modernizr.custom.05819.js"></script>
+  <title>Corner Cup Coffee | Home</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <!-- Main Navigation -->
-  <nav class="navbar">
-    <ul class="nav-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-
-      <li class="dropdown">
-        <a href="#projects">Projects</a>
-        <ul class="dropdown-menu">
-          <li><a href="#web-projects">Web Projects</a></li>
-          <li><a href="#javascript">JavaScript</a></li>
-          <li><a href="mpg-calculator/index.html">MPG Calculator</a></li>
-          <li><a href="slider/index.html">Image Slider</a></li>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg" alt="Corner Cup Coffee logo">
+        Corner Cup Coffee
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="apps.html">Applications</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-      </li>
-
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <header id="home">
-    <img src="logo.jpg" alt="Kelvin Dominguez logo" class="logo">
-    <h1>Kelvin Dominguez</h1>
-    <p class="tagline">Risk Analyst</p>
+      </nav>
+    </div>
   </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Your neighborhood coffee stop</h1>
+      <p>
+        Fresh coffee, warm pastries and a quiet place to work or catch up
+        with friends. Open seven days a week.
+      </p>
+      <a href="menu.html" class="button">View the Menu</a>
+    </div>
+  </section>
 
   <main>
 
-    <section class="card">
-      <h2>Welcome</h2>
-      <p>
-        Welcome to my homepage. This site is where I will share the projects
-        I build for this course, including my midterm and final project.
-        Take a look around and check back as new work gets added.
-      </p>
-    </section>
+    <h2 class="section-title">Today's Specials</h2>
+    <p class="section-intro">A few customer favorites, made fresh every morning.</p>
 
-    <section id="about" class="card bio">
-      <img src="photo.jpg"
-           alt="View of the Brooklyn Bridge and East River from a balcony"
-           class="photo">
-
-      <div>
-        <h2>About Me</h2>
-        <p>
-          I am a <strong>Risk Analyst</strong> working in IT security.
-          I am graduating this fall and plan to transfer to either
-          <em>Lehman College</em> or <em>Baruch College</em> to finish
-          my bachelor's degree.
-        </p>
+    <div class="grid">
+      <div class="item">
+        <img src="images/latte.jpg" alt="Caramel latte">
+        <div class="item-body">
+          <h3>Caramel Latte</h3>
+          <p>Espresso, steamed milk and house caramel.</p>
+          <p class="price">$4.75</p>
+        </div>
       </div>
-    </section>
 
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-      <p>
-        This section will contain projects I complete during my
-        client-side programming course.
-      </p>
-    </section>
+      <div class="item">
+        <img src="images/cold-brew.jpg" alt="Cold brew coffee">
+        <div class="item-body">
+          <h3>Cold Brew</h3>
+          <p>Steeped for 18 hours for a smooth, bold taste.</p>
+          <p class="price">$4.25</p>
+        </div>
+      </div>
 
-    <section id="web-projects" class="card">
-      <h2>Web Projects</h2>
-      <p>
-        Web development projects created using HTML and CSS.
-      </p>
-    </section>
+      <div class="item">
+        <img src="images/croissant.jpg" alt="Butter croissant">
+        <div class="item-body">
+          <h3>Butter Croissant</h3>
+          <p>Flaky and baked in house every morning.</p>
+          <p class="price">$3.50</p>
+        </div>
+      </div>
+    </div>
 
-    <section id="javascript" class="card">
-      <h2>JavaScript</h2>
-      <p>
-        JavaScript projects and interactive features for future usage. 
-      </p>
-      <ul>
-        <li><a href="mpg-calculator/index.html">Miles Per Gallon Calculator</a></li>
-        <li><a href="slider/index.html">Image Slider</a></li>
-      </ul>
-    </section>
-
-    <section id="skills" class="card">
-      <h2>Skills</h2>
-      <p>
-        HTML, CSS, JavaScript, Python, Cybersecurity, Information Technology
-      </p>
-    </section>
-
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>
-        You can find me through the links below.
-      </p>
+    <section class="card two-col" style="margin-top: 30px;">
+      <img src="images/shop.jpg" alt="Front of the Corner Cup Coffee shop">
+      <div>
+        <h2>Why Corner Cup?</h2>
+        <ul>
+          <li>Locally roasted beans</li>
+          <li>Free Wi-Fi and plenty of outlets</li>
+          <li>Student discount with a valid ID</li>
+          <li>Catering for meetings and events</li>
+        </ul>
+        <a href="about.html" class="button">Learn More</a>
+      </div>
     </section>
 
   </main>
 
   <footer>
     <nav>
-      <a href="https://github.com/kelvindd1">GitHub</a>
-      <a href="https://www.linkedin.com/">LinkedIn</a>
-      <a href="https://www.w3schools.com/">W3Schools</a>
-      <a href="mailto:kelvindd1999@gmail.com">Email Me</a>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="apps.html">Applications</a>
+      <a href="contact.html">Contact</a>
     </nav>
-
-    <p>&copy; 2026 Kelvin Dominguez. All Rights Reserved.</p>
+    <p>&copy; 2026 Corner Cup Coffee. Website by Kelvin Dominguez.</p>
   </footer>
 
 </body>
