@@ -78,30 +78,40 @@
       </div>
     </section>
 
-    <section class="card app" id="mpg">
+    <section class="card app" id="order">
       <span class="app-tag">App 2</span>
-      <h2>Miles Per Gallon Calculator</h2>
+      <h2>Coffee Order Calculator</h2>
       <p>
-        Enter the miles driven and the gallons of gas used, and the calculator
-        shows the car's miles per gallon. It also checks for empty values and
-        stops you from dividing by zero.
+        Pick an item from our menu and enter how many you want. The calculator
+        shows the subtotal, NYC sales tax and the total. It also checks that
+        an item is chosen and the quantity is at least 1.
       </p>
 
       <div class="app-demo">
-        <form id="mpgForm">
-          <label for="milesTraveled">Miles traveled</label>
-          <input type="number" id="milesTraveled" min="0" step="any" placeholder="e.g. 320">
+        <form id="orderForm" novalidate>
+          <label for="item">Menu item</label>
+          <select id="item">
+            <option value="">Choose an item</option>
+            <option value="2.50">Drip Coffee - $2.50</option>
+            <option value="3.00">Espresso - $3.00</option>
+            <option value="4.25">Cappuccino - $4.25</option>
+            <option value="4.75">Caramel Latte - $4.75</option>
+            <option value="4.25">Cold Brew - $4.25</option>
+            <option value="4.00">Chai Tea - $4.00</option>
+            <option value="3.50">Butter Croissant - $3.50</option>
+            <option value="3.25">Blueberry Muffin - $3.25</option>
+          </select>
 
-          <label for="gallonsUsed">Gallons used</label>
-          <input type="number" id="gallonsUsed" min="0" step="any" placeholder="e.g. 12.5">
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" min="1" step="1" value="1">
 
           <div class="form-buttons">
             <button type="submit" class="button">Calculate</button>
-            <button type="reset" id="resetBtn" class="button secondary">Clear</button>
+            <button type="reset" id="clearBtn" class="button secondary">Clear</button>
           </div>
         </form>
 
-        <p id="result" class="message"></p>
+        <p id="orderResult" class="message"></p>
       </div>
     </section>
 
@@ -129,6 +139,6 @@
   </footer>
 
   <script src="slider.js"></script>
-  <script src="mpg.js"></script>
+  <script src="order.js"></script>
 </body>
 </html>
