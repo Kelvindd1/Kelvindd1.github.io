@@ -89,7 +89,7 @@ img {
 /* Hero banner on the homepage */
 
 .hero {
-  background: url("../images/hero.jpg") center / cover no-repeat;
+  background: url("hero.jpg") center / cover no-repeat;
   color: #f7efe5;
   padding: 90px 16px;
 }
@@ -455,7 +455,7 @@ footer p {
   .hero {
     padding: 60px 16px;
     background: linear-gradient(rgba(45, 28, 18, 0.8), rgba(45, 28, 18, 0.8)),
-                url("../images/hero.jpg") right / cover no-repeat;
+                url("hero.jpg") right / cover no-repeat;
   }
 
   .hero h1 {
