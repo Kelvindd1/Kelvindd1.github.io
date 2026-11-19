@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kelvin Dominguez | Homepage</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="slider/style.css">
   <script src="modernizr.custom.05819.js"></script>
 </head>
 
@@ -14,6 +15,7 @@
   <nav class="navbar">
     <ul class="nav-menu">
       <li><a href="#home">Home</a></li>
+      <li><a href="#featured">Featured</a></li>
       <li><a href="#about">About Me</a></li>
 
       <li class="dropdown">
@@ -49,6 +51,59 @@
       </p>
     </section>
 
+    <!-- Auto image slider. Styles and script live in the slider/ folder -->
+    <section id="featured" class="card gallery">
+      <h2>Featured Project: Corner Cup Coffee</h2>
+
+      <div class="slideshow">
+
+        <div class="slide fade">
+          <img src="slider/images/slide1-latte-art.jpg" alt="Latte with heart foam art on a wooden table">
+          <p class="caption">Fresh Pours Daily</p>
+        </div>
+
+        <div class="slide fade">
+          <img src="slider/images/slide2-storefront.jpg" alt="Corner Cup Coffee storefront with striped awning">
+          <p class="caption">Your Neighborhood Corner</p>
+        </div>
+
+        <div class="slide fade">
+          <img src="slider/images/slide3-pastries.jpg" alt="Pastry case with croissant, donut and muffin">
+          <p class="caption">Baked This Morning</p>
+        </div>
+
+        <div class="slide fade">
+          <img src="slider/images/slide4-cold-brew.jpg" alt="Three iced coffees on a sunny day">
+          <p class="caption">Cold Brew Season</p>
+        </div>
+
+        <div class="slide fade">
+          <img src="slider/images/slide5-house-blend.jpg" alt="Bag of Corner Cup house blend with coffee beans">
+          <p class="caption">Take Home Our House Blend</p>
+        </div>
+
+        <span id="counter" class="counter"></span>
+
+        <button type="button" id="prevBtn" class="arrow prev" aria-label="Previous slide">&#10094;</button>
+        <button type="button" id="nextBtn" class="arrow next" aria-label="Next slide">&#10095;</button>
+      </div>
+
+      <!-- Thumbnails double as the slide picker; script.js matches them to slides by position -->
+      <div class="thumbnails">
+        <img class="thumb" src="slider/images/slide1-latte-art.jpg" alt="Show slide 1">
+        <img class="thumb" src="slider/images/slide2-storefront.jpg" alt="Show slide 2">
+        <img class="thumb" src="slider/images/slide3-pastries.jpg" alt="Show slide 3">
+        <img class="thumb" src="slider/images/slide4-cold-brew.jpg" alt="Show slide 4">
+        <img class="thumb" src="slider/images/slide5-house-blend.jpg" alt="Show slide 5">
+      </div>
+
+      <div class="controls">
+        <button type="button" id="playBtn">Pause</button>
+      </div>
+
+      <p><a href="cornercup/index.html">Visit the Corner Cup Coffee site</a></p>
+    </section>
+
     <section id="about" class="card bio">
       <img src="photo.jpg"
            alt="View of the Brooklyn Bridge and East River from a balcony"
@@ -58,9 +113,8 @@
         <h2>About Me</h2>
         <p>
           I am a <strong>Risk Analyst</strong> working in IT security.
-          I am graduating this fall and plan to transfer to either
-          <em>Lehman College</em> or <em>Baruch College</em> to finish
-          my bachelor's degree.
+          I am graduating this fall and transferring to
+          <em>Lehman College</em> to finish my bachelor's degree.
         </p>
       </div>
     </section>
@@ -83,7 +137,7 @@
     <section id="javascript" class="card">
       <h2>JavaScript</h2>
       <p>
-        JavaScript projects and interactive features for future usage. 
+        JavaScript projects and interactive features for future usage.
       </p>
       <ul>
         <li><a href="mpg-calculator/index.html">Miles Per Gallon Calculator</a></li>
@@ -119,5 +173,6 @@
     <p>&copy; 2026 Kelvin Dominguez. All Rights Reserved.</p>
   </footer>
 
+  <script src="slider/script.js"></script>
 </body>
 </html>
