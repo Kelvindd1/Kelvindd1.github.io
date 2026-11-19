@@ -11,10 +11,10 @@ main > p a {
   font-weight: bold;
 }
 
-/* Photos are portrait, so the slider is capped in width to keep it from getting too tall on desktop */
+/* Slide images are 2:1 landscape, so the slider fills the card width */
 .slideshow,
 .thumbnails {
-  max-width: 460px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -33,7 +33,7 @@ main > p a {
 .slide img {
   display: block;
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 2 / 1;
   object-fit: cover;
 }
 
@@ -108,7 +108,7 @@ main > p a {
 .thumb {
   flex: 1;
   min-width: 0;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 2 / 1;
   object-fit: cover;
   border-radius: 5px;
   border: 3px solid transparent;
