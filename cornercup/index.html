@@ -21,6 +21,7 @@
           <li><a href="menu.html">Menu</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="apps.html">Applications</a></li>
+          <li><a href="../index.html">Class Work</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -39,6 +40,52 @@
   </section>
 
   <main>
+
+    <!-- Auto image slider. slider.js matches each thumbnail to a slide by position -->
+    <section class="card home-slider" id="gallery">
+      <h2 class="section-title">Inside Corner Cup</h2>
+      <p class="section-intro">A quick look at what we pour, bake and sell every day.</p>
+
+      <div class="slideshow">
+        <div class="slide fade">
+          <img src="slide1-latte-art.jpg" alt="Latte with heart foam art on a wooden table">
+          <p class="caption">Fresh Pours Daily</p>
+        </div>
+        <div class="slide fade">
+          <img src="slide2-storefront.jpg" alt="Corner Cup Coffee storefront with striped awning">
+          <p class="caption">Your Neighborhood Corner</p>
+        </div>
+        <div class="slide fade">
+          <img src="slide3-pastries.jpg" alt="Pastry case with croissant, donut and muffin">
+          <p class="caption">Baked This Morning</p>
+        </div>
+        <div class="slide fade">
+          <img src="slide4-cold-brew.jpg" alt="Three iced coffees on a sunny day">
+          <p class="caption">Cold Brew Season</p>
+        </div>
+        <div class="slide fade">
+          <img src="slide5-house-blend.jpg" alt="Bag of Corner Cup house blend with coffee beans">
+          <p class="caption">Take Home Our House Blend</p>
+        </div>
+
+        <span id="counter" class="counter"></span>
+
+        <button type="button" id="prevBtn" class="arrow prev" aria-label="Previous slide">&#10094;</button>
+        <button type="button" id="nextBtn" class="arrow next" aria-label="Next slide">&#10095;</button>
+      </div>
+
+      <div class="thumbnails">
+        <img class="thumb" src="slide1-latte-art.jpg" alt="Show slide 1">
+        <img class="thumb" src="slide2-storefront.jpg" alt="Show slide 2">
+        <img class="thumb" src="slide3-pastries.jpg" alt="Show slide 3">
+        <img class="thumb" src="slide4-cold-brew.jpg" alt="Show slide 4">
+        <img class="thumb" src="slide5-house-blend.jpg" alt="Show slide 5">
+      </div>
+
+      <div class="slider-controls">
+        <button type="button" id="playBtn" class="button">Pause</button>
+      </div>
+    </section>
 
     <h2 class="section-title">Today's Specials</h2>
     <p class="section-intro">A few customer favorites, made fresh every morning.</p>
@@ -94,10 +141,12 @@
       <a href="menu.html">Menu</a>
       <a href="about.html">About</a>
       <a href="apps.html">Applications</a>
+      <a href="../index.html">Class Work</a>
       <a href="contact.html">Contact</a>
     </nav>
     <p>&copy; 2026 Corner Cup Coffee. Website by Kelvin Dominguez.</p>
   </footer>
 
+  <script src="slider.js"></script>
 </body>
 </html>
