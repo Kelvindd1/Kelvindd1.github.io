@@ -21,6 +21,7 @@
           <li><a href="menu.html">Menu</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="apps.html" class="active">Applications</a></li>
+          <li><a href="../index.html">Class Work</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -38,48 +39,42 @@
       <span class="app-tag">App 1</span>
       <h2>Image Slider</h2>
       <p>
-        A photo slideshow that shows our menu specials. It moves to the next
-        photo every 4 seconds, and you can use the arrows, click a thumbnail,
-        or pause it.
+        A photo slideshow of the shop that runs on our home page. It moves to
+        the next photo every 4 seconds, and you can use the arrows, click a
+        thumbnail, or pause it.
+      </p>
+      <a href="index.html#gallery" class="button">See it on the Home page</a>
+    </section>
+
+    <section class="card app" id="mpg">
+      <span class="app-tag">App 2</span>
+      <h2>Miles Per Gallon Calculator</h2>
+      <p>
+        Driving in for catering pickups? Enter the miles you traveled and the
+        gallons of gas you used, and the calculator shows your miles per gallon.
+        Both numbers must be greater than 0.
       </p>
 
       <div class="app-demo">
-        <div class="slideshow">
-          <div class="slide fade">
-            <img src="latte.jpg" alt="Caramel latte">
-          </div>
-          <div class="slide fade">
-            <img src="cold-brew.jpg" alt="Cold brew coffee">
-          </div>
-          <div class="slide fade">
-            <img src="croissant.jpg" alt="Butter croissant">
-          </div>
-          <div class="slide fade">
-            <img src="muffin.jpg" alt="Blueberry muffin">
-          </div>
+        <form id="mpgForm" novalidate>
+          <label for="miles">Miles traveled</label>
+          <input type="number" id="miles" min="0" step="any" placeholder="e.g. 240">
 
-          <span id="counter" class="counter"></span>
+          <label for="gallons">Gallons of gas used</label>
+          <input type="number" id="gallons" min="0" step="any" placeholder="e.g. 8">
 
-          <button type="button" id="prevBtn" class="arrow prev" aria-label="Previous slide">&#10094;</button>
-          <button type="button" id="nextBtn" class="arrow next" aria-label="Next slide">&#10095;</button>
-        </div>
+          <div class="form-buttons">
+            <button type="submit" class="button">Calculate</button>
+            <button type="reset" id="mpgClearBtn" class="button secondary">Clear</button>
+          </div>
+        </form>
 
-        <!-- script.js matches each thumbnail to a slide by position -->
-        <div class="thumbnails">
-          <img class="thumb" src="latte.jpg" alt="Show photo 1">
-          <img class="thumb" src="cold-brew.jpg" alt="Show photo 2">
-          <img class="thumb" src="croissant.jpg" alt="Show photo 3">
-          <img class="thumb" src="muffin.jpg" alt="Show photo 4">
-        </div>
-
-        <div class="slider-controls">
-          <button type="button" id="playBtn" class="button">Pause</button>
-        </div>
+        <p id="mpgResult" class="message"></p>
       </div>
     </section>
 
     <section class="card app" id="order">
-      <span class="app-tag">App 2</span>
+      <span class="app-tag">App 3</span>
       <h2>Coffee Order Calculator</h2>
       <p>
         Pick an item from our menu and enter how many you want. The calculator
@@ -116,7 +111,7 @@
     </section>
 
     <section class="card app" id="form-check">
-      <span class="app-tag">App 3</span>
+      <span class="app-tag">App 4</span>
       <h2>Contact Form Validation</h2>
       <p>
         The contact form checks that the name, email and message are filled in
@@ -133,12 +128,13 @@
       <a href="menu.html">Menu</a>
       <a href="about.html">About</a>
       <a href="apps.html">Applications</a>
+      <a href="../index.html">Class Work</a>
       <a href="contact.html">Contact</a>
     </nav>
     <p>&copy; 2026 Corner Cup Coffee. Website by Kelvin Dominguez.</p>
   </footer>
 
-  <script src="slider.js"></script>
+  <script src="mpg.js"></script>
   <script src="order.js"></script>
 </body>
 </html>
