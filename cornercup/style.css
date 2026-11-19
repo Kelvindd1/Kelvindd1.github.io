@@ -411,6 +411,35 @@ select:focus {
   margin-top: 12px;
 }
 
+/* Caption sits on top of the image with a dark fade so the text stays readable */
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 40px 16px 14px;
+  color: #f7efe5;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(transparent, rgba(45, 28, 18, 0.8));
+}
+
+/* Home page slider uses wide 2:1 photos instead of the 4:3 menu photos */
+.home-slider .slideshow,
+.home-slider .thumbnails {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-slider .slide img,
+.home-slider .thumb {
+  aspect-ratio: 2 / 1;
+}
+
 /* Footer */
 
 footer {
@@ -468,5 +497,10 @@ footer p {
 
   .two-col img {
     width: 100%;
+  }
+
+  .caption {
+    font-size: 1rem;
+    padding: 30px 10px 10px;
   }
 }
