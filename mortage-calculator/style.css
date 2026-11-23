@@ -1,0 +1,93 @@
+/* Mortgage calculator styles. Copied from the MPG calculator so both pages look the same,
+   and scoped to .calculator so the site-wide look from ../styles.css is not overridden. */
+
+.breadcrumb {
+  font-size: 0.9em;
+  color: #6b7280;
+}
+
+.breadcrumb a,
+main > p a {
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+.calculator {
+  max-width: 420px;
+  margin: 0 auto 20px;
+}
+
+.calculator label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.calculator input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #b8c2cc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.calculator .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.calculator button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.calculator button[type="submit"] {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.calculator button[type="submit"]:hover {
+  background-color: #7c3aed;
+}
+
+.calculator button[type="reset"] {
+  background-color: #d9dee3;
+  color: #333;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+  min-height: 1.4em;
+}
+
+.error {
+  color: #b00020;
+}
+
+.calculator select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #b8c2cc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.result {
+  line-height: 1.7;
+}
+
+.formula {
+  font-weight: bold;
+  text-align: center;
+}
