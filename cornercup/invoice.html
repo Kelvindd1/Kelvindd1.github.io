@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corner Cup Coffee | Invoice</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="invoice.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.svg" alt="Corner Cup Coffee logo">
+        Corner Cup Coffee
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="apps.html" class="active">Applications</a></li>
+          <li><a href="../index.html">Class Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="invoice-page">
+
+    <article class="invoice">
+
+      <!-- Company banner -->
+      <header class="invoice-banner">
+        <h1>Corner Cup Coffee</h1>
+        <address>
+          250 Grand Concourse<br>
+          Bronx, NY 10451<br>
+          718.555.0142 Cell
+        </address>
+      </header>
+
+      <!-- Invoice number and date -->
+      <section class="invoice-meta">
+        <h2>
+          <label for="invoiceNumber">Invoice #</label>
+          <input type="text" id="invoiceNumber" value="618">
+        </h2>
+        <p class="invoice-date">
+          <label for="invoiceDate" class="visually-hidden">Invoice date</label>
+          <input type="text" id="invoiceDate" value="6/15/2024">
+        </p>
+      </section>
+
+      <!-- Customer and job -->
+      <section class="parties">
+        <div class="party">
+          <h2>Bill To</h2>
+          <input type="text" aria-label="Customer name" value="Omega Foto">
+          <input type="text" aria-label="Customer address" value="Address">
+          <input type="tel" aria-label="Customer phone" value="849-852-5549">
+        </div>
+
+        <div class="party">
+          <h2>For</h2>
+          <input type="text" aria-label="Order or event" value="Office catering order">
+          <input type="text" aria-label="P.O. number" value="P.O. # 2024-061">
+        </div>
+      </section>
+
+      <!-- Line items -->
+      <table class="items">
+        <thead>
+          <tr>
+            <th scope="col">Service Description</th>
+            <th scope="col" class="col-amount">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" aria-label="Item 1 description" value="Coffee boxes, 96 oz (3)"></td>
+            <td class="col-amount"><input type="text" aria-label="Item 1 amount" value="$ 72.00"></td>
+          </tr>
+          <tr>
+            <td><input type="text" aria-label="Item 2 description" value="Assorted pastry trays (2)"></td>
+            <td class="col-amount"><input type="text" aria-label="Item 2 amount" value="$ 60.00"></td>
+          </tr>
+          <tr>
+            <td><input type="text" aria-label="Item 3 description" value="Cold brew growlers (4)"></td>
+            <td class="col-amount"><input type="text" aria-label="Item 3 amount" value="$ 48.00"></td>
+          </tr>
+          <tr>
+            <td><input type="text" aria-label="Item 4 description"></td>
+            <td class="col-amount"><input type="text" aria-label="Item 4 amount"></td>
+          </tr>
+          <tr>
+            <td><input type="text" aria-label="Item 5 description"></td>
+            <td class="col-amount"><input type="text" aria-label="Item 5 amount"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Totals -->
+      <table class="totals">
+        <tbody>
+          <tr>
+            <th scope="row">Subtotal</th>
+            <td>$ 180.00</td>
+          </tr>
+          <tr>
+            <th scope="row">Initial payment (50%)</th>
+            <td>$ 90.00</td>
+          </tr>
+          <tr>
+            <th scope="row">Other Costs</th>
+            <td><input type="text" aria-label="Other costs" value="$ 15.00"></td>
+          </tr>
+          <tr class="total-cost">
+            <th scope="row">Total Cost</th>
+            <td>$ 195.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Notes -->
+      <footer class="invoice-notes">
+        <p class="payable">Make all checks payable to Corner Cup Coffee</p>
+        <p>
+          If you have any questions concerning this invoice, use the following
+          contact information: Kelvin Dominguez at 718.555.0142
+          orders@cornercupcoffee.com Thank you for your business!
+        </p>
+      </footer>
+
+    </article>
+
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="apps.html">Applications</a>
+      <a href="../index.html">Class Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p>&copy; 2026 Corner Cup Coffee. Website by Kelvin Dominguez.</p>
+  </footer>
+
+</body>
+</html>
